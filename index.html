@@ -17,6 +17,10 @@
             padding: 20px 0;
             text-align: center;
         }
+        header img {
+            width: 100%; /* Makes the image fill the width of the header */
+            height: auto; /* Keeps the image's aspect ratio */
+        }
         nav {
             background-color: #444;
             display: flex;
@@ -65,12 +69,23 @@
         .contact-form button:hover {
             background-color: #555;
         }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 45%;
+            height: auto;
+            border: 5px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
 
 <header>
-<img src="img_2578.jpeg" alt="King's Roofing Solution Logo" style="width: 100%; height: auto;">
+    <img src="img_2578.jpeg" alt="King's Roofing Solution Logo" style="width: 100%; height: auto;">
     <h1>Welcome to King Roofing Solution</h1>
     <p>Your trusted roofing experts in the DFW area</p>
 </header>
@@ -79,6 +94,7 @@
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -106,6 +122,33 @@
             <li>Commercial & Residential Roofing</li>
             <li>Storm Damage Repairs</li>
         </ul>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="container">
+        <h2>Before & After</h2>
+        <p>Here are some before and after pictures of our roofing projects.</p>
+        <div class="gallery">
+            <div>
+                <h3>Before</h3>
+                <img src="before_and_after/before1.jpeg" alt="Before Image 1">
+            </div>
+            <div>
+                <h3>After</h3>
+                <img src="before_and_after/after1.jpeg" alt="After Image 1">
+            </div>
+        </div>
+        <div class="gallery">
+            <div>
+                <h3>Before</h3>
+                <img src="before_and_after/before2.jpeg" alt="Before Image 2">
+            </div>
+            <div>
+                <h3>After</h3>
+                <img src="before_and_after/after2.jpeg" alt="After Image 2">
+            </div>
+        </div>
     </div>
 </section>
 
